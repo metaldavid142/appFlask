@@ -3,10 +3,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__, template_folder='templates')
 
-#Ruta de página principal index
 @app.route('/')
-def index():
-    return render_template('index.html')
+def principal():
+    return render_template('principal.html')
 
 #Ruta de página 1
 @app.route('/drones')
